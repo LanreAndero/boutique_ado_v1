@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['boutique-ado-lja-3fffdb32a337.herokuapp.com', '.ws-eu108.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['boutique-ado-lja-3fffdb32a337.herokuapp.com', '.ws-eu110.gitpod.io', 'localhost']
 
 # USE_X_FORWARDED_HOST = True
 
