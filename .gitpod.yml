@@ -1,9 +1,13 @@
 image:
   file: .gitpod.dockerfile
+
 tasks:
-  - init: . ${GITPOD_REPO_ROOT}/.vscode/init_tasks.sh
-    command: /home/gitpod/.pg_ctl/bin/pg_start > /dev/null
+  - init: |
+      export SECRET_KEY='django-insecure-2@8y6j#-mu^man92t+(krr3p6dwlq!#$i21h!&u1wof$cw&_ge'
+      . ${GITPOD_REPO_ROOT}/.vscode/init_tasks.sh
+      /home/gitpod/.pg_ctl/bin/pg_start > /dev/null
   - command: . ${GITPOD_REPO_ROOT}/.vscode/uptime.sh &
+
 vscode:
   extensions:
     - ms-python.python
@@ -14,3 +18,6 @@ vscode:
     - ms-toolsai.jupyter
     - ms-toolsai.jupyter-keymap
     - ms-toolsai.jupyter-renderers
+    - ms-python.debugpy
+    - ms-toolsai.vscode-jupyter-cell-tags
+    - ms-toolsai.vscode-jupyter-slideshow
