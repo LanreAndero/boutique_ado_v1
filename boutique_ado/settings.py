@@ -31,8 +31,6 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['boutique-ado-lja-3fffdb32a337.herokuapp.com', '.ws-eu110.gitpod.io', 'localhost']
 
-# USE_X_FORWARDED_HOST = True
-
 
 # Application definition
 
@@ -133,9 +131,7 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-# DATABASES = {
-#     'default': dj_database_url.parse('postgres://pkcslgou:Poj66ncr28R7b0FsLxrbWZfC-qOeOJWp@trumpet.db.elephantsql.com/pkcslgou')
-# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
